@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Author Meta -->
+        <meta name="author" content="Themefisher">
+        <!-- Meta Description -->
+        <meta name="description" content="">
+        <!-- Meta Keyword -->
+        <meta name="keywords" content="">
+        <!-- meta character set -->
+        <meta charset="utf-8">
+
+        <!-- Site Title -->
+      
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
+        <link href='https://fonts.googleapis.com/css?family=Raleway:200,300,400,700,900,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:200,300,400,900,700,500,300' rel='stylesheet' type='text/css'>
+
+		
+        <!--
+        CSS
+        ============================================= -->
+        <link rel="stylesheet" href="font-awesome.min.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="owl.carousel.css">
+        <link rel="stylesheet" href="justifiedGallery.min.css">
+        <link rel="stylesheet" href="et-font.css">
+        <link rel="stylesheet" href="animate.css">
+        <link rel="stylesheet" href="owl.carousel.css">
+        <link rel="stylesheet" href="owl.theme.css">
+        <link rel="stylesheet" href="dnamain.css">
+    
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Sticky Footer Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/sticky-footer/">
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/4.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+
+<style>
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+</style>
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+<body>
+
+
+
+  <div style="background-color: rgb(109, 44, 109); color:#fff;" class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1>🍇DNA Sequencer</h1>
+    </div>
+  </div>
+
+
+  <div  class="home-banner fullscreen" >
+    <div class="gradient"></div>
+    <div class="banner-content dtable fullscreen">
+        <div style="height: 700px;" class="content-inner dtablecell">
+            <div class="container">
+            
+              <h3 style="font-size: 30px;" >Enter your inital strand of DNA in any of the two fields to either receive the complementary pair or the opposing RNA. More importantly, have fun messing around (or maybe you have a bio test idk).
+              </h3>
+            </br>
+          
+              <div>DNA to adjacent side: <input type="text" style="color:#fff; background-color:#3c5e87;  border: none;"  value="Write here!" id="myText" >
+              
+            <button style="color:#fff; background-color:#3c5e87;  border: none;" onclick="RNAStrand()">Click Me!</button>
+            </br>
+              <p style="font-size: 30px;" ><b>RESULTS displayed here:</b><span style="font-size: 30px;" id="demo"><b></b></span></p>
+              
+            </div>
+       
+       
+          </br>            </br>
+        </br>
+
+
+       
+       
+            <div>DNA to RNA: <input type="text" style="color:#fff; background-color:#3c5e87;  border: none;"  value="Write here!"  id="myRext" >
+              
+              <button style="color:#fff; background-color:#3c5e87;  border: none;" onclick="DNAStrand()">Click Me!</button>
+              </br>
+                <p style="font-size: 30px;" ><b>RESULTS displayed here:</b><span style="font-size: 30px;" id="remo"><b></b></span></p>
+                
+              </div>
+       
+       
+       
+       
+       
+       
+       
+          </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+function RNAStrand(){
+    var x = document.getElementById("myText").value;
+const pairs = { A: 'T', T: 'A', C: 'G', G: 'C' }
+
+x = x.toUpperCase();
+
+document.getElementById("demo").innerHTML=  
+ x.split('').map(string => pairs[string]).join('');
+
+
+
+}
+
+
+function DNAStrand(){
+    var x = document.getElementById("myRext").value;
+const pairs = { A: 'U', T: 'A', C: 'G', G: 'C' }
+
+document.getElementById("remo").innerHTML=  
+ x.split('').map(string => pairs[string]).join('');
+
+
+
+}
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
