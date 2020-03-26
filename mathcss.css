@@ -266,7 +266,7 @@ button.btn.btn-theme-color:hover{
     background-size: cover;
     position: relative;
     width: 100%;
-    background-image: url('dna.webp');
+    background-image: url('backg.png');
     background-size: cover;
 }
 
@@ -287,15 +287,12 @@ button.btn.btn-theme-color:hover{
   background: -webkit-linear-gradient(45deg, #002453 0%,#ff2b4a 100%);
   background: -o-linear-gradient(45deg, #002453 0%,#ff2b4a 100%);
   background: -ms-linear-gradient(45deg, #002453 0%,#ff2b4a 100%);
-  background: linear-gradient(45deg, black 40%,rgb(204, 4, 204) 60%);
+  background: linear-gradient(45deg, rgb(135, 150, 0) 20%,#000000 80%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002453', endColorstr='#ff2b4a',GradientType=1 );
+
 }
 
-.dtable {
-    display: table;
-    vertical-align: middle;
-    width: 100%;
-}
+
 
 .dtablecell {
     display: table-cell;
@@ -310,21 +307,19 @@ button.btn.btn-theme-color:hover{
 
 .banner-content {
     color: #fff;
-  font-size: 40px;
+  font-size: 20px;
   }
 
-.banner-content h1 {
+.gradient h1 {
     display: inline-block;
     font-size: 155px;
-    padding: 15px 0 19px;
     text-transform: uppercase;
     letter-spacing: 30px;
     font-weight: 200;
 }
 
-.banner-content p {
+.gradient p {
     font-size: 16px;
-    margin: 23px 0 0;
     letter-spacing: 10px;
     font-weight: 200;
     text-transform: uppercase;
