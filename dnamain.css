@@ -310,7 +310,7 @@ button.btn.btn-theme-color:hover{
 
 .banner-content {
     color: #fff;
-  font-size: 40px;
+  font-size: 30px;
   }
 
 .banner-content h1 {
@@ -388,7 +388,6 @@ button.btn.btn-theme-color:hover{
 
 .process-inner .icon-holder {
     position: relative;
-    top: 70px;
     display: inline-block;
     padding: 10px;
     -webkit-transition: all 0.3s ease;
@@ -398,7 +397,6 @@ button.btn.btn-theme-color:hover{
 
 .process-inner .heading {
     position: relative;
-    top: 60px;
     -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -475,7 +473,6 @@ button.btn.btn-theme-color:hover{
 
 .process-inner i {
     font-size: 40px;
-    margin-bottom: 35px;
     color:#d34e4b;
 }
 
@@ -876,14 +873,14 @@ button.btn.btn-theme-color:hover{
 ======================================================*/
 
 .footer {
-    background-color: #F7F7F7;
+    background-color: #000;
 }
 .social-icons {
     padding:50px;
     
 }
 .social-icons a {
-    color: #ff2b4a;
+    color: rgb(204, 4, 204);
     line-height: 30px;
     display: inline-block;
     padding: 10px;
@@ -899,7 +896,7 @@ button.btn.btn-theme-color:hover{
     vertical-align: middle;
 }
 .social-icons a:hover {
-    background-color: #29a4d4;
+    background-color: purple;
     color: #fff;
     border-radius: 100%;
 }
@@ -929,6 +926,12 @@ button.btn.btn-theme-color:hover{
 
 @media (min-width: 980px) and (max-width: 1150px) {
 
+  .banner-content {
+
+font-size: 20px;
+
+  }
+
 }
 
 
@@ -937,6 +940,12 @@ button.btn.btn-theme-color:hover{
 ==============================================================*/
 
 @media (min-width: 768px) and (max-width: 979px) {
+
+  .banner-content {
+
+    font-size: 20px;
+    
+      }
 
 }
 
@@ -982,6 +991,13 @@ button.btn.btn-theme-color:hover{
         background: transparent;
     }
 
+    .banner-content {
+
+      font-size: 20px;
+      
+        }
+
+
 }
 
 
@@ -990,7 +1006,11 @@ button.btn.btn-theme-color:hover{
 ==============================================================*/
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  .banner-content {
 
+    font-size: 20px;
+    
+      }
 }
 
 

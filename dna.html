@@ -107,50 +107,64 @@
   </div>
 
 
-  <div  class="home-banner fullscreen" >
-    <div class="gradient"></div>
-    <div class="banner-content dtable fullscreen">
-        <div style="height: 700px;" class="content-inner dtablecell">
-            <div class="container">
+  <div  style="width:100%; height:100px ;" class="home-banner fullscreen" >
+    <div  style="width:100%"  class="gradient"></div>
+    <div  style="width:100%"  class="banner-content dtable fullscreen">
+        <div style=" width:100%"   class="content-inner dtablecell">
+            <div  style="width:100%"  class="container">
             
-              <h3 style="font-size: 30px;" >Enter your inital strand of DNA in any of the two fields to either receive the complementary pair or the opposing RNA. More importantly, have fun messing around (or maybe you have a bio test idk).
-              </h3>
-            </br>
-          
-              <div>DNA to adjacent side: <input type="text" style="color:#fff; background-color:#3c5e87;  border: none;"  value="Write here!" id="myText" >
-              
-            <button style="color:#fff; background-color:#3c5e87;  border: none;" onclick="RNAStrand()">Click Me!</button>
-            </br>
-              <p style="font-size: 30px;" ><b>RESULTS displayed here:</b><span style="font-size: 30px;" id="demo"><b></b></span></p>
-              
-            </div>
-       
-       
-          </br>            </br>
-        </br>
+            
+            <div  style="width:100%"  id="process" class="process section">
+              <div class="container">
+                  <div  style="width:100%"  class="row">
+                    <h3 style="font-size: 40px;" >Enter your inital strand of DNA in any of the two fields to either receive the complementary pair or the opposing RNA. More importantly, have fun messing around (or maybe you have a bio test idk).
+                    </h3>
+                  </br >                  </br >
+                </br >
 
-
-       
-       
-            <div>DNA to RNA: <input type="text" style="color:#fff; background-color:#3c5e87;  border: none;"  value="Write here!"  id="myRext" >
-              
-              <button style="color:#fff; background-color:#3c5e87;  border: none;" onclick="DNAStrand()">Click Me!</button>
-              </br>
-                <p style="font-size: 30px;" ><b>RESULTS displayed here:</b><span style="font-size: 30px;" id="remo"><b></b></span></p>
-                
+                      <div style="background-color: purple;  border: 6px rgb(204, 4, 204) ridge;" class="proecess-block col-xs-12 col-sm-6 col-md-6">
+                              
+                              <div>DNA to RNA: </br><input type="text" style="color:#fff; background-color:#3c5e87;  border: none;"  value="Write here!"  id="myRext" >
+                          
+                                <button style="color:#fff; background-color:#3c5e87;  border: none;" onclick="DNAStrand()">Click Me!</button>
+                                </br>
+                                  <p style="font-size: 20px;" ><b>RESULTS displayed here:</b><span style="font-size: 30px;" id="remo"><b></b></span></p>
+                                  
+                                </div>
+                      </div>
+                      
+                      <div style="background-color: purple;  border: 6px rgb(204, 4, 204) ridge;" class="proecess-block col-xs-12 col-sm-6 col-md-6">
+                             
+                              <div>DNA to complementary: <input type="text" style="color:#fff; background-color:#3c5e87;  border: none;"  value="Write here!" id="myText" >
+                          
+                                <button style="color:#fff; background-color:#3c5e87;  border: none;" onclick="RNAStrand()">Click Me!</button>
+                                </br>
+                                  <p style="font-size: 20px;" ><b>RESULTS displayed here:</b><span style="font-size: 30px;" id="demo"><b></b></span></p>
+                                  
+                                </div>
+                      </div>
+                      
+                     
+            
+                  </div>
               </div>
-       
-       
-       
-       
+            </div>
+            <!-- // process -->
+            
+
+
+
+
+
+
+
+
        
        
        
           </div>
     </div>
 </div>
-
-
 
 
 
@@ -186,6 +200,9 @@ function DNAStrand(){
     var x = document.getElementById("myRext").value;
 const pairs = { A: 'U', T: 'A', C: 'G', G: 'C' }
 
+x = x.toUpperCase();
+
+
 document.getElementById("remo").innerHTML=  
  x.split('').map(string => pairs[string]).join('');
 
@@ -198,7 +215,45 @@ document.getElementById("remo").innerHTML=
 
 
 </script>
+<script src="jquery-1.11.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="owl.carousel.js"></script>
+<script src="wow.min.js"></script>
+<script src="jquery.justifiedGallery.min.js"></script>
+<script src="owl.carousel.min.js"></script>
+<script src="main.js"></script>
 
 
+
+
+
+
+<footer class="footer">
+  <div class="conainer text-center wow zoomIn">
+      <div class="social-icons clearfix">
+          <a class="facebook" href="http://www.fb.com/themefisher">
+              <i class="icon-facebook"></i> 
+          </a>
+         
+  
+       
+          <a class="dribbble" href="http://www.themefisher.com/themefisher">
+              <i class="icon-dribbble"></i> 
+          </a>
+      
+          <a class="linkedin" href="http://www.linkedin.com/themefisher">
+              <i class="icon-linkedin"></i> 
+          </a>
+      
+      
+          
+          
+      </div> 
+
+      <div class="copyright">
+          <p>@2020 Rashmit Shrestha - Yeet</p>
+      </div>
+  </div>
+</footer>
 </body>
 </html>
