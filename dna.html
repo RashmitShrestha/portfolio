@@ -102,7 +102,51 @@
 
   <div style="background-color: rgb(109, 44, 109); color:#fff; height: 120px;" class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1>🍇DNA Sequencer</h1>
+      <h1>🍇DNA Sequencer 
+        <div class="preloader loading">
+            <span class="slice"></span>
+            <span class="slice"></span>
+            <span class="slice"></span>
+            <span class="slice"></span>
+            <span class="slice"></span>
+            <span class="slice"></span>
+        </div>
+    </div>
+       <!-- end #preloader -->
+       <header class="site-header navbar-fixed-top navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+              
+            </div>
+            
+            <div class="nav-toggle hidden-xs">
+                <button class="toggle-btn">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <nav class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav main-manu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="dna.html">DNA</a></li>
+                    <li><a href="math.html">Math</a></li>
+                  
+                </ul>
+            </nav><!-- /.navbar-collapse -->
+        </div>
+    </header></h1>
+    
+    
+    
     </div>
   </div>
 
@@ -117,11 +161,9 @@
             <div  style="width:100%"  id="process" class="process section">
               <div class="container">
                   <div  style="width:100%"  class="row">
-                    <h3 style="font-size: 40px;" >Enter your inital strand of DNA in any of the two fields to either receive the complementary pair or the opposing RNA. More importantly, have fun messing around (or maybe you have a bio test idk).
+                    <h3 style="font-size: 30px;" >Enter your inital strand of DNA in any of the two fields to either receive the complementary pair or the opposing RNA. More importantly, have fun messing around (or maybe you have a bio test idk).
                     </h3>
-                  </br >                  </br >
-                </br >
-
+                      
                       <div style="background-color: purple;  border: 6px rgb(204, 4, 204) ridge;" class="proecess-block col-xs-12 col-sm-6 col-md-6">
                               
                               <div>DNA to RNA: </br><input type="text" style="color:#fff; background-color:#3c5e87;  border: none;"  value="Write here!"  id="myRext" >
@@ -139,7 +181,7 @@
                           
                                 <button style="color:#fff; background-color:#3c5e87;  border: none;" onclick="RNAStrand()">Click Me!</button>
                                 </br>
-                                  <p style="font-size: 20px;" ><b>RESULTS displayed here:</b><span style="font-size: 30px;" id="demo"><b></b></span></p>
+                                  <p style="font-size: 20px; color:#fff" ><b>RESULTS displayed here:</b><span style="font-size: 30px;" id="demo"><b></b></span></p>
                                   
                                 </div>
                       </div>
