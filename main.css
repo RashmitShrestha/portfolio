@@ -83,8 +83,8 @@ button.btn.btn-theme-color:hover{
 }
 
 .section {
-    padding-top: 124px;
-    padding-bottom: 124px;
+    padding-top: 44px;
+    padding-bottom: 44px;
 }
 
 .title {
@@ -494,10 +494,10 @@ button.btn.btn-theme-color:hover{
 }
 
 .exp-block {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 60px 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
     color: #fff;
-}
+text-align:left ; }
 
 .exp-block h3 {
     font-size: 20px;
