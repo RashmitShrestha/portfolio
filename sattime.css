@@ -70,7 +70,11 @@
     color:#f5564e;
     font-family: 'Permanent Marker', cursive;
     width:100%;
-    
+    animation-direction: alternate-reverse;
+
+    animation-name: title;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
     text-decoration: underline;
     }
     
@@ -101,8 +105,11 @@
     .blogt {
     font-family: 'Teko', sans-serif;
     font-size: 35px;
-    color:#f5564e;
-    text-decoration: underline;
+    animation-name: title;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+transition: all 0.3s ease-in ;    text-decoration: underline;
     }
     
   
@@ -125,17 +132,24 @@ width: 100%;
 
 .bold {
 
-color: #e9453c;
 font-weight: bolder;
+animation-name: content;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-direction: alternate-reverse;
+transition: all 0.3s ease-in ;
 }
 
 
     .fetp {
     width:100%;
-    background-color: #1a3263;
     height:auto;
     box-sizing: border-box;
-    
+    animation-name: content;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+transition: all 0.3s ease-in ;
   }
     
     .flex-container {
@@ -409,9 +423,9 @@ font-weight: bolder;
   .int {
     margin:0px 0px 20px 0px;
     display: flex;
-    background-color: #fab95b;
     padding: 50px;
-    }
+ background-color: #fab95b;
+  }
     
     
     
@@ -586,4 +600,40 @@ font-weight: bolder;
                 
                 
                 }
+
+
+
+
+                @keyframes float {
+                  0%   {box-shadow: 0px 5px;}
+              
+                }
+
+
+
+
+      
+                @keyframes content {
+                  0%   {background: rgb(209,150,1);  left:0px; top:0px;}
+                  25%   {background: rgba(217,3,3,1); left:0px; top:0px;}
+                  50%   {background: rgb(201,233,0);  left:0px; top:0px;}
+                  75%   {background: rgb(59,173,0);  left:0px; top:0px;}
+                  100%   {background: rgb(6,203,210);  left:0px; top:0px;
+                  }
+                }
+
+
+
+               
+                
+                
+                @keyframes title {
+                  0%   {color:red; left:0px; top:0px;}
+                  25%   {color:rgb(0, 255, 21); left:0px; top:0px;}
+                  50%   {color:rgb(0, 255, 200); left:0px; top:0px;}
+                  75%   {color:rgb(0, 153, 255); left:0px; top:0px;}
+                  100%   {color:rgb(212, 0, 255); left:0px; top:0px;   animation-direction: reverse;
+                  }
+                }
+
                
