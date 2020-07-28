@@ -26,7 +26,7 @@ function megFunc() {
         honelm.innerHTML = "BACK TO WORK!"
 
         work.play();
-    }, 5000);
+    }, 300000);
     
 }
 
@@ -38,7 +38,7 @@ honelm.innerHTML = "BACK TO WORK!";
 
     megFunc()
 
-},15000)
+},1500000)
 
   
 
