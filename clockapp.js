@@ -34,13 +34,18 @@ document.getElementById("yeet").addEventListener("click",   () => {
 beRed();
 honelm.innerHTML = "BACK TO WORK!";
 
-    setInterval(() => {
+    setTimeout(() => {
 
     megFunc()
 
+    setInterval(() => {
+
+        megFunc()
+    
+    },1800000)
+
 },1500000)
 
-  
 
 
 }        )
