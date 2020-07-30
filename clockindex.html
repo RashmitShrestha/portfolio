@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gr8 Timer</title>
+    <title>Split Second</title>
     <style>
         .timeinp {
 
@@ -13,44 +13,132 @@
         }
 
 
+  
+.neon {
+  color: rgb(255, 255, 255);
+  text-shadow:
+    0 0 5px rgb(189, 0, 0),
+    0 0 10px rgb(189, 0, 0),
+    0 0 20px rgb(189, 0, 0),
+    0 0 40px rgb(189, 0, 0),
+    0 0 80px rgb(189, 0, 0),
+    0 0 90px rgb(189, 0, 0),
+    0 0 100px rgb(189, 0, 0),
+    0 0 150px rgb(189, 0, 0);
+}
+
+
+
+#neon1 {
+  color: rgb(255, 255, 255);
+  text-shadow:
+    0 0 5px rgb(33, 165, 0),
+    0 0 10px rgb(33, 165, 0),
+    0 0 20px rgb(33, 165, 0),
+    0 0 40px rgb(33, 165, 0),
+    0 0 80px rgb(33, 165, 0),
+    0 0 90px rgb(33, 165, 0),
+    0 0 100px rgb(33, 165, 0),
+    0 0 150px rgb(33, 165, 0);
+}
+
+
+
+
+
+.minutes {
+
+
+}
+
+.seconds {
+
+
+
+}
+
+
+/* general styling */
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+body {
+  background-color: rgb(32, 32, 32);
+
+  font-family: -apple-system, 
+    BlinkMacSystemFont, 
+    "Segoe UI", 
+    Roboto, 
+    Oxygen-Sans, 
+    Ubuntu, 
+    Cantarell, 
+    "Helvetica Neue", 
+    sans-serif;
+}
+
+.btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+  color: white;
+}
 
         #maindiv {
-
-            padding:10px;
-            background-color: aquamarine;
-            width:300px;
+background: linear-gradient(90deg, #ee1400a1 50%, #6cd4818f 50%);        width:350px;
+height: 380px;
         }
     </style>
 </head>
 
 <body>
     <center>
-        <div id="maindiv">
-            <h1>Gr8 TImer</h1>
-            
+        <div class="container">
+            <h1 style="letter-spacing: 4px; font-weight:400;" class="neon"><span id="neon1">HalfS</span>econd</h1>
+          </div>     
+       <div style="margin:75px;
+        background-image: url('https://www.bellacor.com/media.bellacor.com/images/1500/2093MM1757.jpg'); background-position:right; background-position-x: center; background-size: cover; width: 350px;">
+        <div id="maindiv" >
+                
             
             <div>
-            <h2 id="honelm" style="color: gray;">Status?</h2>
+            <h2 id="honelm" style="padding: 5px; margin-top: 10px; color: black; background-color: rgb(209, 209, 209);">Status?</h2>
 
 
 
             <table>
 
 
-                <tr>
-                    <td>
+                <tr >
+                    <td >
                         <label>Length of Work:</label>
-                        <input id="wrkmin" class="timeinp" type="text" id="fname" name="fname" placeholder="Minutes Here"></br></br>
+                        <input id="wrkmin" class="timeinp" type="text" id="fname" name="fname" placeholder="Minutes Here" style="margin-bottom: 40px;"></br></br>
 
                     </td>
-                    <td> <input id="wrksec" class="timeinp" type="text" id="fname" name="fname"  placeholder="Seconds Here"></br></br>
+                    <td> <input id="wrksec" class="timeinp" type="text" id="fname" name="fname"  placeholder="Seconds Here" style="margin-bottom: 40px;"></br></br>
 
                     </td>
 
 
                 </tr>
 
-
+            </br>
 
                 <tr>
                     <td>
@@ -73,12 +161,14 @@
 
 
 
+        </br >
+    </br >
 
-
-            <button style="background-color: rgb(9, 199, 206); border: none; padding: 5px;" id="yeet">Click Me</button>
+            <button class="btn" id="yeet">Click to Start!</button>
         </div>
         
         </div>
+    </div>
     </center>
 
     <script src="clockapp.js">
