@@ -47,17 +47,32 @@
 
 
 .minutes {
-
-
+padding:3px;
+border: none;
+margin: 2px;
 }
 
 .seconds {
+  border: none;
+  padding:3px;
 
+  margin: 2px;
 
 
 }
 
 
+.minutes:hover {
+background-color: rgb(168, 168, 168);
+color: #f5f5f5;
+}
+
+
+
+.seconds:hover {
+background-color: rgb(168, 168, 168);
+color: #f5f5f5;
+}
 /* general styling */
 
 
@@ -128,10 +143,10 @@ height: 380px;
                 <tr >
                     <td >
                         <label>Length of Work:</label>
-                        <input id="wrkmin" class="timeinp" type="text" id="fname" name="fname" placeholder="Minutes Here" style="margin-bottom: 40px;"></br></br>
+                        <input id="wrkmin" class="timeinp minutes" type="text" id="fname" name="fname" placeholder="Minutes Here" style="margin-bottom: 40px;"></br></br>
 
                     </td>
-                    <td> <input id="wrksec" class="timeinp" type="text" id="fname" name="fname"  placeholder="Seconds Here" style="margin-bottom: 40px;"></br></br>
+                    <td> <input id="wrksec" class="timeinp seconds" type="text" id="fname" name="fname"  placeholder="Seconds Here" style="margin-bottom: 40px;"></br></br>
 
                     </td>
 
@@ -143,10 +158,10 @@ height: 380px;
                 <tr>
                     <td>
                         <label>Length of Break:</label>
-                        <input id="brkmin" class="timeinp" type="text" id="fname" name="fname" placeholder="Minutes Here"></br></br>
+                        <input id="brkmin" class="timeinp minutes" type="text" id="fname" name="fname" placeholder="Minutes Here"></br></br>
 
                     </td>
-                    <td> <input id="brksec" class="timeinp" type="text" id="fname" name="fname"  placeholder="Seconds Here"></br></br>
+                    <td> <input id="brksec" class="timeinp seconds" type="text" id="fname" name="fname"  placeholder="Seconds Here"></br></br>
 
                     </td>
 
