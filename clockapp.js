@@ -11,19 +11,21 @@ document.getElementById("yeet").addEventListener("click", () => {
   var wrkmin = document.getElementById("wrkmin").value;
   var wrksec = document.getElementById("wrksec").value;
 
-  // if (Number(brkmin) == null) {
-  //   brkmin = 0;
-  // }
+  if (Number(brkmin) == null) {
+    brkmin = 0;
+  }
 
-  // if (Number(brksec) == null) {
-  //   brksec = 0;
-  // }
-  // if (Number(wrkmin) == null) {
-  //   wrkmin = 0;
-  // }
-  // if (Number(wrksec) == null) {
-  //   wrksec = 0;
-  // }
+  if (Number(brksec) == null) {
+    brksec = 0;
+  }
+  if (Number(wrkmin) == null) {
+    wrkmin = 0;
+  }
+  if (Number(wrksec) == null) {
+    wrksec = 0;
+  }
+
+
 
   (function myFunc01() {
     //YOUR TIME IN HELL HAS BEGUN
@@ -55,4 +57,17 @@ work.play();
       }
     }, 1000);
   })();
+
+
+
+  document.getElementById('yeet').id = 'great'; 
+  document.getElementById("great").addEventListener("click", () => {
+    location.reload();
+    
+    });
+
+
 });
+
+
+

@@ -2,195 +2,253 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Split Second</title>
-    <style>
-        .timeinp {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split Second</title>
+  <style>
+    .timeinp {
 
-            display: inline-table;
-            width: 100px;
-        }
-
-
-  
-.neon {
-  color: rgb(255, 255, 255);
-  text-shadow:
-    0 0 5px rgb(189, 0, 0),
-    0 0 10px rgb(189, 0, 0),
-    0 0 20px rgb(189, 0, 0),
-    0 0 40px rgb(189, 0, 0),
-    0 0 80px rgb(189, 0, 0),
-    0 0 90px rgb(189, 0, 0),
-    0 0 100px rgb(189, 0, 0),
-    0 0 150px rgb(189, 0, 0);
-}
+      display: inline-table;
+      width: 100px;
+    }
 
 
 
-#neon1 {
-  color: rgb(255, 255, 255);
-  text-shadow:
-    0 0 5px rgb(33, 165, 0),
-    0 0 10px rgb(33, 165, 0),
-    0 0 20px rgb(33, 165, 0),
-    0 0 40px rgb(33, 165, 0),
-    0 0 80px rgb(33, 165, 0),
-    0 0 90px rgb(33, 165, 0),
-    0 0 100px rgb(33, 165, 0),
-    0 0 150px rgb(33, 165, 0);
-}
+    .neon {
+      color: rgb(255, 255, 255);
+      text-shadow:
+        0 0 5px rgb(189, 0, 0),
+        0 0 10px rgb(189, 0, 0),
+        0 0 20px rgb(189, 0, 0),
+        0 0 40px rgb(189, 0, 0),
+        0 0 80px rgb(189, 0, 0),
+        0 0 90px rgb(189, 0, 0),
+        0 0 100px rgb(189, 0, 0),
+        0 0 150px rgb(189, 0, 0);
+    }
+
+
+
+    #neon1 {
+      color: rgb(255, 255, 255);
+      text-shadow:
+        0 0 5px rgb(33, 165, 0),
+        0 0 10px rgb(33, 165, 0),
+        0 0 20px rgb(33, 165, 0),
+        0 0 40px rgb(33, 165, 0),
+        0 0 80px rgb(33, 165, 0),
+        0 0 90px rgb(33, 165, 0),
+        0 0 100px rgb(33, 165, 0),
+        0 0 150px rgb(33, 165, 0);
+    }
 
 
 
 
 
-.minutes {
-padding:3px;
-border: none;
-margin: 2px;
-}
+    .minutes {
+      padding: 3px;
+      border: none;
+      margin: 2px;
+    }
 
-.seconds {
-  border: none;
-  padding:3px;
+    .seconds {
+      border: none;
+      padding: 3px;
 
-  margin: 2px;
-
-
-}
+      margin: 2px;
 
 
-.minutes:hover {
-background-color: rgb(168, 168, 168);
-color: #f5f5f5;
-}
+    }
+
+
+    .minutes:hover {
+      background-color: rgb(168, 168, 168);
+      color: #f5f5f5;
+    }
 
 
 
-.seconds:hover {
-background-color: rgb(168, 168, 168);
-color: #f5f5f5;
-}
-/* general styling */
+    .seconds:hover {
+      background-color: rgb(168, 168, 168);
+      color: #f5f5f5;
+    }
+
+    /* general styling */
 
 
-html, body {
-  height: 100%;
-  margin: 0;
-}
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
 
-.container {
-  margin: 0 auto;
-}
+    .container {
+      margin: 0 auto;
+    }
 
-body {
-  background-color: rgb(32, 32, 32);
+    body {
+      background-color: rgb(32, 32, 32);
 
-  font-family: -apple-system, 
-    BlinkMacSystemFont, 
-    "Segoe UI", 
-    Roboto, 
-    Oxygen-Sans, 
-    Ubuntu, 
-    Cantarell, 
-    "Helvetica Neue", 
-    sans-serif;
-}
+      font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen-Sans,
+        Ubuntu,
+        Cantarell,
+        "Helvetica Neue",
+        sans-serif;
+    }
 
-.btn {
-  background-color: #ddd;
-  border: none;
-  color: black;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition: 0.3s;
-}
+    .btn {
+      background-color: #ddd;
+      border: none;
+      color: black;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition: 0.3s;
+    }
 
-.btn:hover {
-  background-color: #3e8e41;
-  color: white;
-}
+    .btn:hover {
+      background-color: #3e8e41;
+      color: white;
+    }
 
-        #maindiv {
-background: linear-gradient(90deg, #ee1400a1 50%, #6cd4818f 50%);        width:350px;
-height: 380px;
-        }
-    </style>
+    #maindiv {
+      background: linear-gradient(90deg, #ee1400a1 50%, #6cd4818f 50%);
+      width: 350px;
+      height: 380px;
+    }
+  </style>
 </head>
 
 <body>
+  <center>
+    <div class="container">
+      <h1 style="letter-spacing: 4px; font-weight:400;" class="neon"><span id="neon1">HalfS</span>econd</h1>
+    </div>
+    
     <center>
-        <div class="container">
-            <h1 style="letter-spacing: 4px; font-weight:400;" class="neon"><span id="neon1">HalfS</span>econd</h1>
-          </div>     
-       <div style="margin:75px;
+      <div id="animationn"></div>
+    </center>
+  
+    
+    
+    
+    <div
+      style="margin:75px;
         background-image: url('https://www.bellacor.com/media.bellacor.com/images/1500/2093MM1757.jpg'); background-position:right; background-position-x: center; background-size: cover; width: 350px;">
-        <div id="maindiv" >
-                
-            
-            <div>
-            <h2 id="honelm" style="padding: 5px; margin-top: 10px; color: black; background-color: rgb(209, 209, 209);">Status?</h2>
-            <h2 id="timeLeft" style="padding: 5px; margin-top: -20px; color: black; background-color: rgb(209, 209, 209);">Time Left?</h2>
+      <div id="maindiv">
+
+
+        <div>
+          <h2 id="honelm" style="padding: 5px; margin-top: 10px; color: black; background-color: rgb(209, 209, 209);">
+            Status?</h2>
+          <h2 id="timeLeft"
+            style="padding: 5px; margin-top: -20px; color: black; background-color: rgb(209, 209, 209);">Time Left?</h2>
 
 
 
-            <table>
+          <table>
 
 
-                <tr >
-                    <td >
-                        <label>Length of Work:</label>
-                        <input id="wrkmin" class="timeinp minutes" type="text" id="fname" name="fname" placeholder="Minutes Here" style="margin-bottom: 40px;"></br></br>
+            <tr>
+              <td>
+                <label>Length of Work:</label>
+                <input id="wrkmin" class="timeinp minutes" type="text" id="fname" name="fname"
+                  placeholder="Minutes Here" style="margin-bottom: 40px;"></br></br>
 
-                    </td>
-                    <td> <input id="wrksec" class="timeinp seconds" type="text" id="fname" name="fname"  placeholder="Seconds Here" style="margin-bottom: 40px;"></br></br>
+              </td>
+              <td> <input id="wrksec" class="timeinp seconds" type="text" id="fname" name="fname"
+                  placeholder="Seconds Here" style="margin-bottom: 40px;"></br></br>
 
-                    </td>
+              </td>
 
 
-                </tr>
+            </tr>
 
             </br>
 
-                <tr>
-                    <td>
-                        <label>Length of Break:</label>
-                        <input id="brkmin" class="timeinp minutes" type="text" id="fname" name="fname" placeholder="Minutes Here"></br></br>
+            <tr>
+              <td>
+                <label>Length of Break:</label>
+                <input id="brkmin" class="timeinp minutes" type="text" id="fname" name="fname"
+                  placeholder="Minutes Here"></br></br>
 
-                    </td>
-                    <td> <input id="brksec" class="timeinp seconds" type="text" id="fname" name="fname"  placeholder="Seconds Here"></br></br>
+              </td>
+              <td> <input id="brksec" class="timeinp seconds" type="text" id="fname" name="fname"
+                  placeholder="Seconds Here"></br></br>
 
-                    </td>
-
-
-                </tr>
-
-
-            </table>
+              </td>
 
 
+            </tr>
+
+
+          </table>
 
 
 
 
-        </br >
-    </br >
 
-            <button class="btn" id="yeet">Click to Start!</button>
+
+          </br>
+          </br>
+
+          <button class="btn" id="yeet">Click to Start!</button>
         </div>
-        
-        </div>
+
+      </div>
     </div>
-    </center>
-
-    <script src="clockapp.js">
 
 
-    </script>
+  </center>
+
+
+
+
+
+
+  <script src="clockapp.js">
+
+
+  </script>
+
+
+  <!-- <script src="js/three.js"></script>
+  <script>
+var scene = new THREE.Scene(); // initialising the scene
+scene.background = new THREE.Color( 0x202020 );
+
+
+const camera = new THREE.PerspectiveCamera(75, (window.innerWidth / 20) / (window.innerHeight / 20), 0.1, 1000);
+
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, 100);
+
+    document.getElementById("animationn").appendChild(renderer.domElement);
+
+    const geometry = new THREE.BoxGeometry();
+    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    const cube = new THREE.Mesh(geometry, material);
+    scene.add(cube);
+
+    camera.position.z = 2.1;
+
+    const animate = function () {
+      requestAnimationFrame(animate);
+
+      cube.rotation.x += 0.01;
+      cube.rotation.y += 0.01;
+
+      renderer.render(scene, camera);
+    };
+
+    animate();
+  </script> -->
 
 </body>
 
