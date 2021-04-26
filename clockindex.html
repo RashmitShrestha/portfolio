@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <title>Split Second</title>
   <style>
     .timeinp {
@@ -41,7 +44,6 @@
         0 0 100px rgb(33, 165, 0),
         0 0 150px rgb(33, 165, 0);
     }
-
 
 
 
@@ -128,7 +130,7 @@
 <body>
   <center>
     <div class="container">
-      <h1 style="letter-spacing: 4px; font-weight:400;" class="neon"><span id="neon1">HalfS</span>econd</h1>
+      <h1  class="neon"><span id="neon1">HalfS</span>econd</h1>
     </div>
     
     <center>
@@ -177,28 +179,47 @@
                 <label>Length of Break:</label>
                 <input id="brkmin" class="timeinp minutes" type="text" id="fname" name="fname"
                   placeholder="Minutes Here"></br></br>
-
               </td>
               <td> <input id="brksec" class="timeinp seconds" type="text" id="fname" name="fname"
                   placeholder="Seconds Here"></br></br>
 
               </td>
-
-
             </tr>
-
-
           </table>
-
-
-
-
-
-
           </br>
           </br>
-
           <button class="btn" id="yeet">Click to Start!</button>
+          
+        </div>
+
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
         </div>
 
       </div>
